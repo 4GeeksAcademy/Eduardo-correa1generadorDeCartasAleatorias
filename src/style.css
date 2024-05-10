@@ -5,3 +5,15 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.palo {
+  font-size: 6vh;
+}
+
+.rojo {
+  color: red;
+}
+
+.numero {
+  font-size: 6vh;
+}
