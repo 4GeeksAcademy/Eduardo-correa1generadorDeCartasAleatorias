@@ -7,8 +7,27 @@ import "./assets/img/4geeks.ico";
 
 window.onload = function() {
   //write your code here
+  generarCarta();
+  document.querySelector(".buttonCard").addEventListener("click", generarCarta);
+};
+
+function generarCarta() {
   const palos = ["♦", "♥", "♠", "♣"];
-  const valores = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "J", "Q", "K"];
+  const valores = [
+    "A",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "J",
+    "Q",
+    "K"
+  ];
   function paloAleatorio() {
     const obtenerPalo = Math.floor(Math.random() * palos.length);
     return palos[obtenerPalo];
@@ -22,7 +41,7 @@ window.onload = function() {
     elementosPalo[i].textContent = palo;
     if (palo === "♥" || palo === "♦") {
       elementosPalo[i].classList.add("rojo");
-    }
+    } else elementosPalo[i].classList.remove("rojo");
   }
 
   function valorAleatorio() {
@@ -34,4 +53,4 @@ window.onload = function() {
   for (let i = 0; i < elementosNumero.length; i++) {
     elementosNumero[i].textContent = numero;
   }
-};
+}

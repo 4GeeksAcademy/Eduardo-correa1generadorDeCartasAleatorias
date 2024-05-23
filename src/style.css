@@ -1,13 +1,14 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 body {
-  background-color: green;
+  background-image: url("https://img.freepik.com/free-vector/flat-design-poker-table-background_23-2151047002.jpg?w=1380&t=st=1716479779~exp=1716480379~hmac=46ad4203919e1376cea1d3363a32cc064b1b757a98ec9d2d701af6ee0c9be1eb");
+  background-size: cover;
   height: 100%;
   margin: 0;
   padding: 0;
 }
 
 .palo {
-  font-size: 6vh;
+  font-size: 8vh;
 }
 
 .rojo {
@@ -15,5 +16,14 @@ body {
 }
 
 .numero {
-  font-size: 6vh;
+  font-size: 16vh;
+}
+.carta {
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0px rgba(17, 16, 16, 0.932);
+  width: 35vh;
+  height: 60vh;
+  background-image: url("https://as2.ftcdn.net/v2/jpg/01/25/47/95/1000_F_125479561_CmTXeMZRLwvsleWwr5H5vhWszg93MdTP.jpg");
+  background-size: 145%;
+  background-position: center;
 }
